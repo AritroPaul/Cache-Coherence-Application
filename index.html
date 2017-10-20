@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+     <link rel="stylesheet" href="index.css" />
+
+</head>
+<title>Cache Coherence Demonstration Application</title>
+<body>
+    <div class="content">
+         <div class = "heading">
+           <h1>Cache Coherence</h1>
+         </div>
+         <div class = "definition">
+           <p> Cache coherence is the uniformity of shared resource data</br>
+               that ends up stored in multiple local caches. When clients in</br>
+               a system maintain caches of a common memory resource,</br>
+               problems may arise with incoherent data.</p>
+           <div class = "photo">
+                 <img src = "Group 1.png">
+           </div>
+         </div>
+         <div class = "processStatus">
+           <p id = "processStatusp">Caches are incoherent. Initial value in memory is 5.</p>
+         </div>
+         <div class = "startButton">
+          <button class="coherence" onclick="coherent()">Make Caches Coherent</button>
+          <button class="incoherence" onclick="incoherent()">Make Caches incoherent</button></br>
+          <button class="button" onclick="start()">Push Value</button>
+         </div>
+         <div class = "smolTitles">
+          <pre>Cache 1
+            <p id = "cache1">Value in Cache 1</p>
+          </pre>
+          <pre>Memory
+            <p id = "memory">Value in Memory</p>
+          </pre>
+          <pre>Cache 2
+            <p  id = "cache2">Value in Cache 2</p>
+          </pre>
+         </div>
+    </div>
+    <script src="default.js"></script>
+</body>
+</html>
