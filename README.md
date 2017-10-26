@@ -5,3 +5,4 @@ Built with Electron.
 
 # Windows Release v1.2
 [Get it here](https://github.com/notACoder69/Cache-Coherence-Application/releases)
+
