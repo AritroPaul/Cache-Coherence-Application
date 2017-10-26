@@ -3,7 +3,7 @@
 <html>
 
 <head>
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
      <link rel="stylesheet" href="index.css" />
 
 </head>
@@ -13,35 +13,49 @@
          <div class = "heading">
            <h1>Cache Coherence</h1>
          </div>
-         <div class = "definition">
+         <div class = "definition row">
+           <div class="main-content col-xs-5">
            <p> Cache coherence is the uniformity of shared resource data</br>
                that ends up stored in multiple local caches. When clients in</br>
                a system maintain caches of a common memory resource,</br>
                problems may arise with incoherent data.</p>
-           <div class = "photo">
+             </div>
+
+           <div class = "photo col-xs-5">
                  <img src = "Group 1.png">
            </div>
          </div>
-         <div class = "processStatus">
+         <div class = "processStatus col-xs-12">
            <p id = "processStatusp">Caches are incoherent. Initial value in memory is 5.</p>
          </div>
          <div class = "startButton">
           <button class="coherence" onclick="coherent()">Make Caches Coherent</button>
           <button class="incoherence" onclick="incoherent()">Make Caches incoherent</button></br>
+          <div class = "weirdButton">
           <button class="button" onclick="start()">Push Value</button>
          </div>
-         <div class = "smolTitles">
-          <pre>Cache 1
+         <br>
+         <br>
+       </div>
+         <div class="container">
+         <div class = "titles row">
+         <div class = "smolTitles col-xs-3">
+            Cache 1
             <p id = "cache1">Value in Cache 1</p>
-          </pre>
-          <pre>Memory
+          </div>
+          <div class = "smolTitles col-xs-3">
+            Memory
             <p id = "memory">Value in Memory</p>
-          </pre>
-          <pre>Cache 2
+          </div>
+          <div class = "smolTitles col-xs-3">
+            Cache 2
             <p  id = "cache2">Value in Cache 2</p>
-          </pre>
+          </div>
          </div>
+       </div>
+     </div>
     </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="default.js"></script>
 </body>
 </html>
